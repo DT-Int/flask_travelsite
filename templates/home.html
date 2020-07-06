@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+		
+	<br>
+	<div class="jumbotron">
+	  <h1 class="display-4">Pardoy Travel represents....</h1>
+	  <p class="lead">Experience the extreem travel with us!!</p>
+	  <hr class="my-4">
+	  <p>Check travel destinations for your suit and let us contact you.</p>
+	  <br>
+	  <a class="btn btn-primary btn-lg" href="{{ url_for('destinations')}}" role="button">Destinations</a>
+	</div>
+
+{% endblock content %}

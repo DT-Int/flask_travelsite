@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %} Destinations {% endblock %}
+
+{% block content %}
+ 
+	<div class="container">
+		<div class="col-md-10 offset-md-1 mt-5">
+			
+			<div class="jumbotron">
+
+				<div class="card-group">
+
+				  	<div class="card" style="width: 18rem;">
+					  <image src="{{ url_for('static', filename='images/moon.jpg') }}" class="card-img-top" alt="iss image">
+					  <div class="card-body">
+					    <h5 class="card-title">The Moon</h5>
+					    <p class="card-text">$ 4.999.999,00</p>
+					    <p class="card-text">14 nights all inclusive</p>
+					    <a href="{{ url_for('application')}}" class="btn btn-primary">Apply</a>
+					  </div>
+					</div>
+
+					<div class="card" style="width: 18rem;">
+					  <image src="{{ url_for('static', filename='images/iss.jpg') }}" class="card-img-top" alt="moon image">
+					  <div class="card-body">
+					    <h5 class="card-title">International Space Station</h5>
+					    <p class="card-text">$ 2.999.999,00</p>
+					    <p class="card-text">7 nights all inclusive</p>
+					    <a href="{{ url_for('application')}}" class="btn btn-primary">Apply</a>
+					  </div>
+					</div>
+
+					<div class="card" style="width: 18rem;">
+					  <image src="{{ url_for('static', filename='images/mars.jpg') }}" class="card-img-top" alt="mars image">
+					  <div class="card-body">
+					    <h5 class="card-title">Mars</h5>
+					    <p class="card-text">$ 12.999.999,00</p>
+					    <p class="card-text">21 nights all inclusive</p>
+					    <a href="{{ url_for('application')}}" class="btn btn-primary">Apply</a>
+					  </div>
+					</div>
+				  
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock content %}
